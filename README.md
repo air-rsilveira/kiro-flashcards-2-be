@@ -22,6 +22,7 @@ Sistema para criação e gerenciamento de baralhos (decks) e cartões (cards) de
 - Spring Data JPA
 - H2 (desenvolvimento/testes) / PostgreSQL (produção)
 - Jakarta Validation
+- Springdoc OpenAPI (Swagger UI)
 - jqwik (property-based testing)
 - JUnit 5
 - Gradle (Kotlin DSL)
@@ -44,6 +45,13 @@ Não precisa de banco externo — usa H2 em memória.
 A API estará disponível em `http://localhost:8080`.
 
 O console H2 fica acessível em `http://localhost:8080/h2-console` (JDBC URL: `jdbc:h2:mem:flashcards`, user: `sa`, sem senha).
+
+### Documentação da API (Swagger)
+
+Com a aplicação rodando, a documentação interativa está disponível em:
+
+- **Swagger UI**: [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
+- **OpenAPI JSON**: [http://localhost:8080/v3/api-docs](http://localhost:8080/v3/api-docs)
 
 ### Opção 2: Docker Compose (PostgreSQL)
 

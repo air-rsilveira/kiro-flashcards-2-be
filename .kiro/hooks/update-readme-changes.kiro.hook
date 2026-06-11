@@ -1,0 +1,15 @@
+{
+  "enabled": true,
+  "name": "Update README on Changes",
+  "description": "Automatically updates the README.md file to reflect recent changes made to the project when the agent finishes a task.",
+  "version": "1",
+  "when": {
+    "type": "userTriggered"
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Review the changes made in this session and update the README.md file to reflect any relevant modifications (new features, updated endpoints, configuration changes, etc.). Keep the README concise and well-structured."
+  },
+  "workspaceFolderName": "kiro-flashcards-2-be",
+  "shortName": "update-readme-changes"
+}
